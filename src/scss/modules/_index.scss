@@ -1,0 +1,95 @@
+.main-content{
+    background-color: $main-bg-color;
+    margin-bottom: 25px;
+    margin-top: 50px;
+
+    .form-inline {
+        padding-top: 20px;
+
+        .form-group {
+            padding-right: 20px;
+            margin-bottom: 40px;
+            #title{
+                width: 115px;
+                color: $heading;
+            }
+            #firstName,#middleInitial,#dateOfBirth{
+                width: 190px;
+            }
+            #lastName{
+                width:260px;
+            }
+            #email{
+                width:312px;
+            }
+            #socialInsNumber{
+                width:240px;
+            }
+            .form-control{
+                border-top: 0 none;
+                border-radius:0px;
+            }
+            @media (max-width: 768px){
+                padding: 0px;
+            }
+        }
+
+        .btn-submit {
+            margin-right: 40px;
+        }
+    }
+
+    a[data-toggle="tooltip"] {
+        display: inline-block;
+        @include border-radius(25px);
+        border: 1px solid $light-green;
+        padding: 0 4px;
+        font-size: 8px;
+        @include links($light-green);
+        color: $light-green;
+    }
+    .application-info{
+    .btn-submit{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    }
+    
+        
+    
+    .btn {
+        margin-left: 20px;
+        color: white;
+        padding:10px 12px;
+    }
+
+    .btn-cancel {
+        background-color: $btn-cancel-bg;
+    }
+
+    .btn-submit {
+        background-color: $btn-submit-bg;
+    }
+
+    @media (max-width: 992px){
+        .with-tooltip {
+            display: inline-block;
+            max-width: 94%;
+        }
+        .personal-info{
+            margin-bottom:70px;
+        }
+        .form-control, .form-group{
+            width:100% !important;
+        }
+        .personal-info h2 {
+            text-align: center;
+        }
+
+        .appliance {
+            text-align: center;
+        }
+    }
+
+}

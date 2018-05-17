@@ -1,0 +1,17 @@
+{
+  "name": "utsav-test",
+  "version": "1.0.0",
+  "description": "Test for TD",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Utsav Thakar",
+  "license": "ISC"
+}

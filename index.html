@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+
+    <title>TD Insurance</title>
+    <meta name="description" content="TD Insurance description">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- header section -->
+        <div class="header-section">
+         <nav class="navbar navbar-default main-navbar"><!-- main navigation -->
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="src/images/logo.png" alt="TD Insurance Logo">
+                    </a>
+                    <a class="login-icon" href="#">
+                        <img alt="TD Insurance Logo" src="src/images/lock-new.jpg">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class=""><a href="#">Products</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Ontario <span class="glyphicon menu-direction"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Alberta</a></li>
+                                <li><a href="#">British-Columbia</a></li>
+                                <li><a href="#">Manitoba</a></li>
+                                <li><a href="#">Quebec</a></li>
+                                <li><a href="#">Saskatchewan</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                EN <span class="glyphicon menu-direction"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">FR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <input id="search" aria-label="Search" class="form-control search-input" placeholder="Search">
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="login-text" href="#">
+                                <img src="src/images/lock-new.jpg">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>    
+                </div>
+                
+                
+            </div>
+        </nav>   
+        </div>
+        
+        <!-- Content -->
+        <div class="container main-content">
+            <div class="row">
+                <section class="col-md-9 col-sm-12 personal-info">
+                    <h1 class="hide">Tell Us About Yourself</h1> 
+                    <h2>Tell Us About Yourself</h2>
+                    <p>Thanks for choosing TD Insurance! In order to safely set up your new accounts and services, please tell us about yourself.</p>
+                    <h2>Personnal Information</h2>
+                    <form action="/" method="POST" class="form-inline">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                <label for="title" class="sr-only">Title</label>
+                                <select class="form-control" required id="title">
+                                    <option value="" selected disabled>Title*</option>
+                                    <option>Mr.</option>
+                                    <option>Ms.</option>
+                                    <option>Mrs.</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName" class="sr-only">First Name</label>
+                                <input class="form-control" required aria-label="First Name" placeholder="First Name*" id="firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="middleInitial" class="sr-only">Middle Initial</label>
+                                <input class="form-control" aria-label="Middle Initial" placeholder="Middle Initial" id="middleInitial">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="sr-only">Last Name</label>
+                                <input class="form-control" required aria-label="Last Name" placeholder="Last Name*" id="lastName">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email Address</label>
+                                <input type="email" required aria-label="Email" class="form-control with-tooltip" placeholder="Email Address*" id="email">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="Valid email address is of the format username@domain.com">
+                                    ?
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateOfBirth" class="sr-only">Date of Brith</label>
+                                <input class="form-control" required aria-label="Date of Birth" id="dateOfBirth"  onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="Date of Brith*">
+                            </div>
+                            <div class="form-group">
+                                <label for="socialInsNumber" class="sr-only">Social Insurance Number</label>
+                                <input class="form-control with-tooltip" required aria-label="Social Insurance Number" with-tooltip" id="socialInsNumber" placeholder="Social Insurance Number*">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="This information will be kept confidential">
+                                    ?
+                                </a>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row text-right">
+                            <button class="btn btn-cancel" type="reset">Cancel</button>
+                            <button class="btn btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="col-md-3 col-sm-12 application-info">
+                    <h4>Your are applying for:</h4>
+                    <p class="appliance">TD&reg; Travel Medical Insurance</p>
+                    <a class="btn btn-submit" href="#">
+                        See More Coverage Options
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="sofa">
+                <img class="sofa-img" src="src/images/sofa.jpg" alt="single sofa">
+            </div>
+            <div class="mid-section">
+                <h2>
+                    Need to talk with us directly?
+                    <a href="#">Contact us <span class="glyphicon glyphicon-menu-right"></span></a>
+                </h2>
+                <div class="links">
+                    <a href="#">Privacy and Security</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube-play"></a>
+                    <a href="#" class="fa fa-rss"></a>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </footer>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@mixin transition($type: all, $time: 400ms, $ease: ease) {
+    transition:  $type $time $ease;
+}
+
+@mixin transitions($args...) {
+    transition: $args;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin box-shadow($args) {
+    box-shadow: $args;
+}
+
+@mixin links ($link,  $hover: $link, $visit: $link, $active: $hover, $focus: $hover, $decorlink: none, $decorhover: none) {
+    a {
+        color: $link;
+        text-decoration: $decorlink;
+        @include transition;
+
+        &:link{
+            color: $link;
+            text-decoration: $decorlink;
+        }
+        &:visited {
+            color: $visit;
+            text-decoration: $decorlink;
+        }
+        &:hover {
+            color: $hover;
+            text-decoration: $decorhover;
+            outline: 0;
+        }
+        &:active {
+            color: $active;
+            text-decoration: $decorhover;
+            outline: 0;
+        }
+        &:focus {
+            color: $focus;
+            text-decoration: $decorhover;
+            outline: 0;
+        }
+    }
+}
